@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --background: #09090b;
+  --surface: #111114;
+  --surface-hover: #18181c;
+  --border: #222227;
+  --foreground: #f4efe6;
+  --muted: #99948c;
+  --gold: #c5a880;
+  --gold-light: #dfcaa9;
+  --gold-dark: #8c7350;
+  --ivory: #faf7f2;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--background);
+    color: var(--foreground);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: rgba(197, 168, 128, 0.25);
+    color: #faf7f2;
+  }
+}
+
+/* Apple Fluid Design: Micro-interactions and touch states */
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Glassmorphism translucent material */
+.glass-panel {
+  background: rgba(17, 17, 20, 0.72);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-nav {
+  background: rgba(9, 9, 11, 0.75);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  border-bottom: 1px solid rgba(197, 168, 128, 0.12);
+}
+
+/* Subtle metallic luxury shine */
+.metallic-text {
+  background: linear-gradient(135deg, #f4efe6 0%, #dfcaa9 50%, #c5a880 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.metallic-border {
+  border-color: rgba(197, 168, 128, 0.2);
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
