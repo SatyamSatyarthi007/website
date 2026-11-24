@@ -170,7 +170,7 @@ export const Footer: React.FC = () => {
             Designed and developed by <span className="text-[#c5a880]">Satyam</span>
           </p>
           <p className="tracking-widest uppercase text-[10px]">
-            Craftsmanship Over Speed · Integrity Over Mass Production
+            Craftsmanship Over Speed · Integrity Over Mass Production · Singular by Design
           </p>
         </div>
       </div>
