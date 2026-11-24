@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { Product } from "@/data/catalog";
 import { ZoomIn, ExternalLink } from "@/components/Icons";
+import { SaveCreationButton } from "@/components/SaveCreationButton";
 
 interface ProductCardProps {
   product: Product;
@@ -108,6 +109,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onInspect }) 
               <ExternalLink size={11} />
             </a>
           </div>
+          <SaveCreationButton productId={product.id} />
         </div>
       </div>
     </article>

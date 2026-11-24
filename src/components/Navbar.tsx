@@ -9,6 +9,7 @@ import { Menu, X, ArrowUpRight } from "@/components/Icons";
 const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/collections", label: "Collections" },
+  { href: "/wishlist", label: "Saved Creations" },
   { href: "/about", label: "About Atelier" },
   { href: "/contact", label: "Contact & Concierge" },
 ];

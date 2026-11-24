@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Product } from "@/data/catalog";
 import { X, ZoomIn, ExternalLink, Mail, ShieldCheck, Check } from "@/components/Icons";
+import { SaveCreationButton } from "@/components/SaveCreationButton";
 
 interface ProductLightboxProps {
   product: Product | null;
@@ -149,6 +150,7 @@ export const ProductLightbox: React.FC<ProductLightboxProps> = ({ product, onClo
           {/* Action CTAs */}
           <div className="pt-8 mt-6 border-t border-[#1a1a22] space-y-3">
             <div className="flex flex-col sm:flex-row gap-3">
+              <SaveCreationButton productId={product.id} compact />
               {/* Buy Now / Acquire Button */}
               <a
                 href={product.checkoutUrl}

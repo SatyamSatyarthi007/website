@@ -6,6 +6,7 @@ import { PRODUCTS, CATEGORIES, Product } from "@/data/catalog";
 import { ProductCard } from "@/components/ProductCard";
 import { ProductLightbox } from "@/components/ProductLightbox";
 import { Filter, Sparkles, ShieldCheck } from "@/components/Icons";
+import { readCreationIds, writeCreationIds, RECENTLY_VIEWED_KEY } from "@/lib/saved-creations";
 
 function CollectionsContent({ initialCategory }: { initialCategory: string }) {
   const [activeCategory, setActiveCategory] = useState<string>(initialCategory);
@@ -117,7 +118,13 @@ function CollectionsContent({ initialCategory }: { initialCategory: string }) {
             <ProductCard
               key={product.id}
               product={product}
-              onInspect={(p) => setSelectedProduct(p)}
+              onInspect={(p) => {
+                writeCreationIds(RECENTLY_VIEWED_KEY, [
+                  p.id,
+                  ...readCreationIds(RECENTLY_VIEWED_KEY).filter((id) => id !== p.id),
+                ].slice(0, 6));
+                setSelectedProduct(p);
+              }}
             />
           ))}
         </div>
