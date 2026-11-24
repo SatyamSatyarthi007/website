@@ -33,23 +33,23 @@ export const PRODUCTS: Product[] = [
   // ==========================================
   {
     id: "solitaire-diamant-etoile",
-    name: "L'Étoile Solitaire Diamant 3.20ct",
+    name: "The Solitaire Diamond 3.20ct",
     category: "rings",
     categoryLabel: "High Jewellery Rings",
     editionBadge: "Unique Commission",
     shortDescription:
-      "A flawless 3.20-carat round brilliant diamond perched in a six-prong platinum crown atop an ultra-fine micropavé shank.",
+      "A flawless 3.20-carat round brilliant diamond perched in a six-prong platinum crown atop an ultra-fine pave-set shank.",
     fullDescription:
-      "Hand-forged in the Geneva atelier, L'Étoile showcases a singular 3.20-carat D-Flawless diamond exhibiting superlative optical symmetry. The scalloped pavilion allows maximum light entry, while thirty-six micropavé diamonds trace the inner contour of the 950 platinum band. Individually sized and engraved to client monogram specifications.",
+      "Hand-forged in the Geneva studio, this creation showcases a singular 3.20-carat D-Flawless diamond exhibiting superlative optical symmetry. The scalloped pavilion allows maximum light entry, while thirty-six pave-set diamonds trace the inner contour of the 950 platinum band. Individually sized and engraved to client monogram specifications.",
     indicativePrice: "$58,000 USD · Indicative Bespoke Tier",
     numericPrice: 58000,
     image: "/images/products/rings/solitaire-diamant.jpg",
-    materials: ["3.20ct D-Flawless Round Brilliant", "950 Platinum", "0.45ct Micropavé Accent Stones"],
+    materials: ["3.20ct D-Flawless Round Brilliant", "950 Platinum", "0.45ct Pave Accent Stones"],
     specs: [
       { label: "Center Stone", value: "3.20 ct · Round Brilliant · Type IIa" },
       { label: "Color & Clarity", value: "D Color · Flawless (FL)" },
       { label: "Metal", value: "Solid 950 Platinum (Hand-Polished Miroir)" },
-      { label: "Accent Pavé", value: "36 Def/VVS Micropavé Diamonds (0.45ct total)" },
+      { label: "Accent Pave", value: "36 Def/VVS Pave-Set Diamonds (0.45ct total)" },
       { label: "Provenance", value: "Certified Kimberley Process & Responsible Jewellery Council" },
       { label: "Crafting Window", value: "6 to 8 weeks upon stone selection" },
     ],
@@ -83,23 +83,23 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "emeraude-ruban-colombienne",
-    name: "Émeraude Ruban Infinie 4.10ct",
+    name: "Infinite Emerald Ribbon 4.10ct",
     category: "rings",
     categoryLabel: "High Jewellery Rings",
     editionBadge: "Unique Commission",
     shortDescription:
-      "A luminous Muzo emerald nestled within an organic ribbon of 18k rose gold and delicate pavé brilliant diamonds.",
+      "A luminous Muzo emerald nestled within an organic ribbon of 18k rose gold and delicate pave-set brilliant diamonds.",
     fullDescription:
       "Sculpted to mimic the fluid drape of silk ribbon, this ring highlights a captivating 4.10-carat Colombian emerald from the historic Muzo deposits. The vivid green gem is enveloped by undulating loops of warm rose gold, hand-set with micro-diamonds that trace the contours of the wearer's hand.",
     indicativePrice: "$52,000 USD · Indicative Bespoke Tier",
     numericPrice: 52000,
     image: "/images/products/rings/emeraude-ruban.jpg",
-    materials: ["4.10ct Muzo Colombian Emerald", "18k Rose Gold", "0.62ct Pavé Diamonds"],
+    materials: ["4.10ct Muzo Colombian Emerald", "18k Rose Gold", "0.62ct Pave Diamonds"],
     specs: [
       { label: "Center Stone", value: "4.10 ct Muzo Colombian Emerald (Insignia Green)" },
       { label: "Clarity Treatment", value: "Minor Traditional Cedarwood Oil Only" },
       { label: "Metal", value: "18k Warm Rose Gold (Au750)" },
-      { label: "Pavé Details", value: "54 Brilliant-Cut Diamonds (F-G / VS+)" },
+      { label: "Pave Details", value: "54 Brilliant-Cut Diamonds (F-G / VS+)" },
       { label: "Design Concept", value: "Continuous Mobius Ribbon Contour" },
       { label: "Crafting Window", value: "8 weeks bespoke casting & gem-setting" },
     ],
@@ -115,7 +115,7 @@ export const PRODUCTS: Product[] = [
     name: "Calibre V-01 Tourbillon Squelette",
     category: "watches",
     categoryLabel: "Bespoke Watches",
-    editionBadge: "Atelier Series · Limited to 8 Pieces",
+    editionBadge: "Studio Series · Limited to 8 Pieces",
     shortDescription:
       "A hand-skeletonized flying 60-second tourbillon with rose gold bridges, blued Breguet hands, and 72-hour power reserve.",
     fullDescription:
@@ -153,7 +153,7 @@ export const PRODUCTS: Product[] = [
     specs: [
       { label: "Case Diameter", value: "39.0 mm · Thickness: 11.2 mm" },
       { label: "Dial Material", value: "Grand Feu Vitreous Enamel in Midnight Bleu" },
-      { label: "Sub-Dials", value: "Engine-Turned Guilloché Silver Seconds & 30-Min Register" },
+      { label: "Sub-Dials", value: "Engine-Turned Silver Seconds & 30-Minute Register" },
       { label: "Calibre", value: "Calibre V-04 Monopusher Chronograph with Column Wheel" },
       { label: "Exhibition Back", value: "Sapphire Crystal with Anti-Reflective Coating" },
       { label: "Strap Included", value: "Hand-stitched dark navy Mississippi alligator" },
@@ -164,7 +164,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "phase-de-lune-meteorite-or-blanc",
-    name: "Observatoire Météorite & Phase de Lune",
+    name: "Meteorite Observatory & Moon Phase",
     category: "watches",
     categoryLabel: "Bespoke Watches",
     editionBadge: "Numbered Edition 03/10",
@@ -194,22 +194,22 @@ export const PRODUCTS: Product[] = [
   // ==========================================
   {
     id: "strap-barenia-cognac-saddle",
-    name: "Bracelet Cuir Barénia Couture Sellier",
+    name: "Barénia Leather Saddler's Strap",
     category: "straps",
     categoryLabel: "Bespoke Leather Straps",
     editionBadge: "Made to Measure",
     shortDescription:
-      "Hand-cut full-grain French Barénia calfskin in warm cognac, saddle-stitched with waxed ecru linen thread and beveled edges.",
+      "Hand-cut full-grain French Barénia calfskin in warm cognac, saddle-stitched with waxed natural linen thread and beveled edges.",
     fullDescription:
       "Sourced exclusively from an artisanal tannery in Alsace, France, this Barénia calfskin possesses an unmatched tactile silkiness and develops a rich amber patina over years of wear. Fully crafted by hand using the traditional double-needle saddler's stitch, with hand-painted hot-waxed edges and hypoallergenic Zermatt calf lining.",
     indicativePrice: "$580 USD · Custom Made to Measure",
     numericPrice: 580,
     image: "/images/products/straps/barenia-cognac-saddle.jpg",
-    materials: ["French Barénia Calfskin (Cognac)", "Fil Au Chinois Waxed Linen Thread", "Zermatt Lining"],
+    materials: ["French Barénia Calfskin (Cognac)", "Waxed Linen Thread", "Zermatt Lining"],
     specs: [
       { label: "Leather Origin", value: "Alsace Tannery (Full-Grain Double Tanned Calf)" },
       { label: "Stitching Technique", value: "Traditional Double-Needle Saddler's Stitch (Point Sellier)" },
-      { label: "Thread", value: "Fil Au Chinois Lin Câblé (Ecru / Natural Waxed)" },
+      { label: "Thread", value: "Braided Linen Thread (Natural Waxed)" },
       { label: "Lining", value: "French Zermatt Water-Resistant Hypoallergenic Calfskin" },
       { label: "Buckle", value: "Solid Brushed 316L Steel or 18k Gold Plated Tang Buckle" },
       { label: "Customization", value: "Custom Lug Width (18-22mm), Length, & Taper to Measure" },
@@ -220,7 +220,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "strap-alligator-noir-mat",
-    name: "Bracelet Alligator de Louisiane Noir Mat",
+    name: "Matte Black Louisiana Alligator Strap",
     category: "straps",
     categoryLabel: "Bespoke Leather Straps",
     editionBadge: "Made to Measure",
@@ -234,7 +234,7 @@ export const PRODUCTS: Product[] = [
     materials: ["Certified Louisiana Alligator Belly", "Matte Noir Dye", "Brushed Platinum Clasp"],
     specs: [
       { label: "Leather Species", value: "Alligator Mississippiensis (CITES Certified)" },
-      { label: "Cut & Grain", value: "Prime Center Square Scale (Écailles Carrées)" },
+      { label: "Cut & Grain", value: "Prime Center Square Scale" },
       { label: "Padding Profile", value: "Bespoke Raised Chronograph Padding (4.5mm tapering to 2.2mm)" },
       { label: "Edge Finishing", value: "Multi-Coat Matte Hand-Burnished Edge Ink" },
       { label: "Clasp Option", value: "Choice of Tang Buckle or Deployant Clasp in Steel/Platinum" },
@@ -246,7 +246,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "strap-nubuck-taupe-artisan",
-    name: "Bracelet Veau Velours Nubuck Taupe",
+    name: "Taupe Nubuck Calfskin Strap",
     category: "straps",
     categoryLabel: "Bespoke Leather Straps",
     editionBadge: "Made to Measure",

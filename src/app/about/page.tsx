@@ -5,9 +5,9 @@ import { BRAND_CONFIG } from "@/lib/config";
 import { ArrowRight, ShieldCheck, Sparkles, Clock, Compass } from "@/components/Icons";
 
 export const metadata = {
-  title: "About the Atelier · Philosophy & Craftsmanship",
+  title: "About the Studio · Philosophy & Craftsmanship",
   description:
-    "Discover the bespoke craftsmanship, material purity, and individualized approach defining Atelier Vauclaire's rings, watches, and leather straps.",
+    "Discover the bespoke craftsmanship, material purity, and individualized approach defining Vauclaire Studio's rings, watches, and leather straps.",
 };
 
 const PROCESS_STEPS = [
@@ -33,7 +33,7 @@ const PROCESS_STEPS = [
     num: "04",
     title: "Archival Provenance",
     subtitle: "Numbered Edition & Lifetime Care",
-    desc: "Upon completion, every creation receives an inscribed dossier documenting its gemological origin, caliber regulation tolerances, and leather lot, cataloged permanently in the atelier's registry.",
+    desc: "Upon completion, every creation receives an inscribed dossier documenting its gemological origin, caliber regulation tolerances, and leather lot, cataloged permanently in the studio's registry.",
   },
 ];
 
@@ -44,7 +44,7 @@ export default function AboutPage() {
       <section className="px-6 sm:px-8 max-w-5xl mx-auto text-center space-y-6 mb-20">
         <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#121216] border border-[#c5a880]/30 text-[10px] tracking-[0.25em] uppercase text-[#dfcaa9]">
           <Sparkles size={12} className="text-[#c5a880]" />
-          <span>Atelier Philosophy</span>
+          <span>Studio Philosophy</span>
         </div>
         <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl font-light text-[#faf7f2] tracking-wide leading-tight">
           Where Slowness is the Ultimate Luxury
@@ -54,12 +54,12 @@ export default function AboutPage() {
         </p>
       </section>
 
-      {/* Full-width Atelier Craftsmanship Editorial Visual */}
+      {/* Full-width Studio Craftsmanship Editorial Visual */}
       <section className="px-6 sm:px-8 max-w-7xl mx-auto mb-24">
         <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#070709] border border-[#22222a]">
           <Image
             src="/images/brand/atelier-craftsmanship.jpg"
-            alt="Atelier Master Craftsman Assembling Horological Calibre"
+            alt="Studio Master Craftsman Assembling Watchmaking Caliber"
             fill
             priority
             sizes="100vw"

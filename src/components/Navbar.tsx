@@ -10,7 +10,7 @@ const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/collections", label: "Collections" },
   { href: "/wishlist", label: "Saved Creations" },
-  { href: "/about", label: "About Atelier" },
+  { href: "/about", label: "About the Studio" },
   { href: "/contact", label: "Contact & Concierge" },
 ];
 
@@ -43,7 +43,7 @@ const NavbarInner: React.FC<{ pathname: string }> = ({ pathname }) => {
             {BRAND_CONFIG.name}
           </span>
           <span className="text-[9px] uppercase tracking-[0.35em] text-[#99948c] font-sans">
-            Atelier · Genève
+            Studio · Geneva
           </span>
         </Link>
 

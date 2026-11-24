@@ -173,11 +173,11 @@ function ContactFormContent({
                   onChange={(e) => setFormData({ ...formData, discipline: e.target.value })}
                   className="w-full bg-[#08080a] border border-[#22222a] text-[#faf7f2] px-4 py-3 text-xs focus:outline-none focus:border-[#c5a880]"
                 >
-                  <option value="general">General Atelier Inquiry</option>
-                  <option value="rings">High Jewellery Rings</option>
+                  <option value="general">General Studio Inquiry</option>
+                  <option value="rings">High Jewelry Rings</option>
                   <option value="watches">Bespoke Horology / Watches</option>
                   <option value="straps">Bespoke Leather Watch Straps</option>
-                  <option value="salon">Private Salon Appointment (Genève / Paris)</option>
+                  <option value="salon">Private Suite Appointment (Geneva / Paris)</option>
                 </select>
               </div>
 
@@ -235,13 +235,13 @@ function ContactFormContent({
               </div>
 
               <p className="text-[10px] text-[#6e6b63] text-center">
-                Discretion guaranteed. Client details are protected by atelier confidentiality protocols.
+                Discretion guaranteed. Client details are protected by studio confidentiality protocols.
               </p>
             </form>
           )}
         </div>
 
-        {/* Right Column: Atelier Addresses & Direct Concierge */}
+        {/* Right Column: Studio Addresses & Direct Concierge */}
         <div className="lg:col-span-5 space-y-10">
           {/* Direct Channels */}
           <div className="p-8 bg-[#101013] border border-[#1e1e24] space-y-6">
@@ -281,7 +281,7 @@ function ContactFormContent({
           {/* Salons & Locations */}
           <div className="p-8 bg-[#101013] border border-[#1e1e24] space-y-6">
             <h3 className="font-serif text-lg text-[#faf7f2] border-b border-[#1b1b22] pb-3">
-              Atelier Salons
+              Studio Suites
             </h3>
             <div className="space-y-5 text-xs">
               {BRAND_CONFIG.concierge.addresses.map((loc) => (

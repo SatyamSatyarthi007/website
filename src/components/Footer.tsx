@@ -20,7 +20,7 @@ export const Footer: React.FC = () => {
               </span>
             </Link>
             <p className="text-xs leading-relaxed max-w-sm text-[#8a867e] font-sans">
-              Dedicated to the preservation of hand craftsmanship. Each ring, bespoke timepiece, and leather strap is engineered as a singular numbered creation in our Geneva and Paris ateliers.
+              Dedicated to the preservation of hand craftsmanship. Each ring, bespoke timepiece, and leather strap is engineered as a singular numbered creation in our Geneva and Paris studios.
             </p>
             <div className="flex items-center gap-2 text-[11px] text-[#c5a880]/80 tracking-wider uppercase">
               <ShieldCheck size={14} />
@@ -70,7 +70,7 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Atelier & Maison */}
+          {/* Studio & House */}
           <div className="space-y-4">
             <h4 className="text-xs uppercase tracking-[0.22em] text-[#faf7f2] font-medium">
               The Maison
@@ -78,7 +78,7 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2.5 text-xs">
               <li>
                 <Link href="/about" className="hover:text-[#c5a880] transition-colors">
-                  Our Atelier Philosophy
+                  Our Studio Philosophy
                 </Link>
               </li>
               <li>
@@ -102,21 +102,21 @@ export const Footer: React.FC = () => {
           {/* Concierge & Locations */}
           <div className="space-y-4">
             <h4 className="text-xs uppercase tracking-[0.22em] text-[#faf7f2] font-medium">
-              Atelier Salons
+              Studio Suites
             </h4>
             <div className="space-y-3 text-xs leading-relaxed">
               <div className="flex items-start gap-2">
                 <MapPin size={14} className="text-[#c5a880] shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-[#faf7f2]">Genève · Flagship</p>
-                  <p className="text-[#7d7a74] text-[11px]">14 Rue du Rhône</p>
+                  <p className="text-[#faf7f2]">Geneva · Flagship</p>
+                  <p className="text-[#7d7a74] text-[11px]">14 Rhône Street</p>
                 </div>
               </div>
               <div className="flex items-start gap-2">
                 <MapPin size={14} className="text-[#c5a880] shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-[#faf7f2]">Paris · Private Salon</p>
-                  <p className="text-[#7d7a74] text-[11px]">28 Place Vendôme</p>
+                  <p className="text-[#faf7f2]">Paris · Private Suite</p>
+                  <p className="text-[#7d7a74] text-[11px]">28 Vendôme Square</p>
                 </div>
               </div>
               <div className="flex items-center gap-2 pt-1 text-[#dfcaa9]">
@@ -138,7 +138,7 @@ export const Footer: React.FC = () => {
             <span className="text-[#c5a880] uppercase tracking-wider font-medium mr-1.5">
               Production Architecture:
             </span>
-            All prices are indicative bespoke estimates. Purchases utilize external checkout links (e.g. Stripe / Shopify / Atelier Wire Concierge) configured in <code className="text-[#dfcaa9] bg-[#121215] px-1 py-0.5 rounded">src/data/catalog.ts</code>.
+            All prices are indicative bespoke estimates. Purchases utilize external checkout links (e.g. Stripe / Shopify / Vauclaire Wire Concierge) configured in <code className="text-[#dfcaa9] bg-[#121215] px-1 py-0.5 rounded">src/data/catalog.ts</code>.
           </p>
           <div className="flex gap-4 shrink-0 text-xs text-[#99948c]">
             <a

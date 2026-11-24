@@ -15,7 +15,7 @@ export default function HomePage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/brand/hero-montage.jpg"
-            alt="Atelier Vauclaire Haute Horlogerie & High Jewellery"
+            alt="Vauclaire Studio High Watchmaking & High Jewelry"
             fill
             priority
             sizes="100vw"
@@ -42,7 +42,7 @@ export default function HomePage() {
 
           {/* Concise Brand Statement */}
           <p className="max-w-2xl mx-auto text-sm sm:text-base text-[#d8d3c9] font-light leading-relaxed tracking-wide">
-            Sculpted high jewellery rings, hand-regulated haute horlogerie, and saddle-stitched leather straps. Each creation is brought to life one by one in numbered atelier editions.
+            Sculpted high jewelry rings, hand-regulated high watchmaking, and saddle-stitched leather straps. Each creation is brought to life one by one in numbered studio editions.
           </p>
 
           {/* Primary CTA (As required by brief: "Explore the Collection") */}
@@ -59,7 +59,7 @@ export default function HomePage() {
               href="/about"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 border border-[#c5a880]/40 text-[#dfcaa9] text-xs uppercase tracking-[0.22em] hover:border-[#c5a880] hover:text-[#faf7f2] hover:bg-[#c5a880]/10 transition-all duration-300 active:scale-[0.98]"
             >
-              <span>The Atelier Story</span>
+              <span>The Studio Story</span>
             </Link>
           </div>
         </div>
@@ -195,7 +195,7 @@ export default function HomePage() {
          ========================================================= */}
       <section className="bg-[#0c0c0f] border-y border-[#1a1a20] py-24 sm:py-32 px-6 sm:px-8">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Atelier Artisan Visual */}
+          {/* Studio Artisan Visual */}
           <div className="relative aspect-[16/10] sm:aspect-[4/3] w-full overflow-hidden bg-[#070709] border border-[#24242d]">
             <Image
               src="/images/brand/atelier-craftsmanship.jpg"
@@ -255,7 +255,7 @@ export default function HomePage() {
                 href="/about"
                 className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-[#faf7f2] hover:text-[#c5a880] transition-colors"
               >
-                <span>Read Full Atelier Story</span>
+                <span>Read Full Studio Story</span>
                 <ArrowRight size={14} />
               </Link>
             </div>

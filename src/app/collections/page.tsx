@@ -43,7 +43,7 @@ function CollectionsContent({ initialCategory }: { initialCategory: string }) {
           The Collections
         </h1>
         <p className="text-xs sm:text-sm text-[#99948c] font-light leading-relaxed">
-          High jewellery rings, hand-regulated bespoke watches, and hand-stitched leather straps. Each piece is crafted in numbered editions or tailored to bespoke measurements.
+          High jewelry rings, hand-regulated bespoke watches, and hand-stitched leather straps. Each piece is crafted in numbered editions or tailored to bespoke measurements.
         </p>
       </div>
 
@@ -184,7 +184,7 @@ export default function CollectionsPage() {
     <Suspense
       fallback={
         <div className="min-h-screen pt-32 text-center text-xs tracking-widest uppercase text-[#c5a880]">
-          Loading Atelier Collections...
+          Loading Studio Collections...
         </div>
       }
     >

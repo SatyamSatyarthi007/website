@@ -131,7 +131,7 @@ export const ProductLightbox: React.FC<ProductLightboxProps> = ({ product, onClo
             {/* Technical Specifications */}
             <div className="space-y-3">
               <h4 className="text-[11px] uppercase tracking-[0.22em] text-[#dfcaa9] font-medium">
-                Atelier Dossier & Specifications
+                Studio Dossier & Specifications
               </h4>
               <div className="space-y-2 text-xs">
                 {product.specs.map((spec) => (
@@ -179,7 +179,7 @@ export const ProductLightbox: React.FC<ProductLightboxProps> = ({ product, onClo
             <div className="flex items-center justify-between text-[10px] text-[#6b6760] pt-2">
               <span className="flex items-center gap-1.5">
                 <ShieldCheck size={12} className="text-[#c5a880]" />
-                Numbered Atelier Provenance Guarantee
+                Numbered Studio Provenance Guarantee
               </span>
               <button
                 type="button"

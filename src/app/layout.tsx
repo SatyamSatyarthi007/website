@@ -34,10 +34,10 @@ export const metadata: Metadata = {
   description: BRAND_CONFIG.description,
   keywords: [
     "bespoke watches",
-    "high jewellery rings",
+    "high jewelry rings",
     "bespoke leather watch straps",
-    "haute horlogerie",
-    "geneva atelier",
+    "high watchmaking",
+    "geneva studio",
     "hand saddle stitch",
     "tourbillon",
     "solitaire diamond",
