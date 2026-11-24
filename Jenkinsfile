@@ -47,7 +47,7 @@ pipeline {
             }
         }
 
-        stage('Smoke Test') {
+        stage('Deploy Local Website') {
             steps {
                 sh '''
                     docker compose up -d --build website
@@ -69,15 +69,13 @@ pipeline {
     }
 
     post {
-        always {
+        success {
+            echo 'Website is live on the Jenkins host at http://localhost:3000.'
+        }
+        failure {
             sh 'docker compose down --remove-orphans || true'
             sh 'docker compose rm -vf || true'
             sh 'docker image rm -f vauclaire-website:latest >/dev/null 2>&1 || true'
-        }
-        success {
-            echo 'Jenkins pipeline completed successfully.'
-        }
-        failure {
             echo 'Jenkins pipeline failed. Review the stage logs above.'
         }
     }
