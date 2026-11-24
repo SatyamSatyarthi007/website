@@ -166,6 +166,9 @@ export const Footer: React.FC = () => {
           <p>
             © {BRAND_CONFIG.year} {BRAND_CONFIG.fullName}. All rights reserved. Registered Geneva & Paris.
           </p>
+          <p className="text-[#99948c]">
+            Designed and developed by <span className="text-[#c5a880]">Satyam</span>
+          </p>
           <p className="tracking-widest uppercase text-[10px]">
             Craftsmanship Over Speed · Integrity Over Mass Production
           </p>
