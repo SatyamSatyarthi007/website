@@ -1,15 +1,17 @@
 "use client";
 
-import React, { useState, useEffect, Suspense } from "react";
+import React, { useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { BRAND_CONFIG } from "@/lib/config";
 import { Mail, Phone, MapPin, Check, ShieldCheck, Sparkles } from "@/components/Icons";
 
-function ContactFormContent() {
-  const searchParams = useSearchParams();
-  const querySubject = searchParams.get("subject") || "";
-  const queryCategory = searchParams.get("category") || "";
-
+function ContactFormContent({
+  querySubject,
+  queryCategory,
+}: {
+  querySubject: string;
+  queryCategory: string;
+}) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -21,16 +23,6 @@ function ContactFormContent() {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
-
-  useEffect(() => {
-    if (querySubject) {
-      setFormData((prev) => ({
-        ...prev,
-        subject: querySubject,
-        discipline: queryCategory || prev.discipline,
-      }));
-    }
-  }, [querySubject, queryCategory]);
 
   const validate = () => {
     const newErrors: Record<string, string> = {};
@@ -312,6 +304,20 @@ function ContactFormContent() {
   );
 }
 
+function ContactWithParams() {
+  const searchParams = useSearchParams();
+  const querySubject = searchParams.get("subject") || "";
+  const queryCategory = searchParams.get("category") || "";
+
+  return (
+    <ContactFormContent
+      key={`${querySubject}:${queryCategory}`}
+      querySubject={querySubject}
+      queryCategory={queryCategory}
+    />
+  );
+}
+
 export default function ContactPage() {
   return (
     <Suspense
@@ -321,7 +327,7 @@ export default function ContactPage() {
         </div>
       }
     >
-      <ContactFormContent />
+      <ContactWithParams />
     </Suspense>
   );
 }

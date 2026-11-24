@@ -13,8 +13,7 @@ const NAV_LINKS = [
   { href: "/contact", label: "Contact & Concierge" },
 ];
 
-export const Navbar: React.FC = () => {
-  const pathname = usePathname();
+const NavbarInner: React.FC<{ pathname: string }> = ({ pathname }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -25,11 +24,6 @@ export const Navbar: React.FC = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  // Close mobile drawer on route change
-  useEffect(() => {
-    setMobileMenuOpen(false);
-  }, [pathname]);
 
   return (
     <header
@@ -134,4 +128,9 @@ export const Navbar: React.FC = () => {
       )}
     </header>
   );
+};
+
+export const Navbar: React.FC = () => {
+  const pathname = usePathname();
+  return <NavbarInner key={pathname} pathname={pathname} />;
 };

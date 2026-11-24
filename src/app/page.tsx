@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { BRAND_CONFIG } from "@/lib/config";
-import { ArrowRight, ArrowUpRight, Sparkles, ShieldCheck, Clock } from "@/components/Icons";
+import { ArrowRight, Sparkles, ShieldCheck, Clock } from "@/components/Icons";
 
 export default function HomePage() {
   return (

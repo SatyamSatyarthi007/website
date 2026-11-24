@@ -1,28 +1,17 @@
 "use client";
 
-import React, { useState, useMemo, useEffect, Suspense } from "react";
+import React, { useState, useMemo, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { PRODUCTS, CATEGORIES, Product } from "@/data/catalog";
 import { ProductCard } from "@/components/ProductCard";
 import { ProductLightbox } from "@/components/ProductLightbox";
 import { Filter, Sparkles, ShieldCheck } from "@/components/Icons";
 
-function CollectionsContent() {
-  const searchParams = useSearchParams();
-  const initialCategory = searchParams.get("cat") || "all";
-
+function CollectionsContent({ initialCategory }: { initialCategory: string }) {
   const [activeCategory, setActiveCategory] = useState<string>(initialCategory);
   const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState<"featured" | "price-asc" | "price-desc">("featured");
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
-
-  // Sync with URL parameter if present
-  useEffect(() => {
-    const cat = searchParams.get("cat");
-    if (cat && ["rings", "watches", "straps", "all"].includes(cat)) {
-      setActiveCategory(cat);
-    }
-  }, [searchParams]);
 
   // Filter and sort products
   const filteredProducts = useMemo(() => {
@@ -173,6 +162,16 @@ function CollectionsContent() {
   );
 }
 
+function CollectionsWithParams() {
+  const searchParams = useSearchParams();
+  const categoryParam = searchParams.get("cat") || "all";
+  const initialCategory = ["rings", "watches", "straps", "all"].includes(categoryParam)
+    ? categoryParam
+    : "all";
+
+  return <CollectionsContent key={initialCategory} initialCategory={initialCategory} />;
+}
+
 export default function CollectionsPage() {
   return (
     <Suspense
@@ -182,7 +181,7 @@ export default function CollectionsPage() {
         </div>
       }
     >
-      <CollectionsContent />
+      <CollectionsWithParams />
     </Suspense>
   );
 }

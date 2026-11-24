@@ -24,7 +24,7 @@ pipeline {
                 sh '''
                     docker compose build website
                     docker compose run --rm --no-deps website npm run lint
-                    docker compose run --rm --no-deps website npm run build
+                    docker compose run --rm --no-deps -e NODE_ENV=production website npm run build
                 '''
             }
         }
